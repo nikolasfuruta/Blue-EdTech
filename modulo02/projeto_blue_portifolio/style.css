@@ -1,0 +1,139 @@
+header{
+    background-image: url("https://cdn.pixabay.com/photo/2015/12/03/08/50/paper-1074131__340.jpg");
+    position:relative;
+    padding-top: 50px;;
+}
+
+header nav{
+    position: absolute;
+    right: 40px;
+    top:0;
+}
+
+.intro li{
+    display:inline-block;
+    margin-left: 10px;;
+}
+
+.intro li a{
+    text-decoration: none;
+    font-size: 40px;
+    color:black
+}
+
+.intro div{
+    width:940px;
+    margin:0 auto;
+    padding:100px 0;
+    text-align: center;
+}
+
+
+.intro h1{
+    font-size: 200px;
+    width: 50%;
+    display: inline;
+    text-transform: uppercase;
+    color:beige;
+    border: 15px solid black;
+    text-align: center;
+    padding:40px;
+    
+}
+
+.intro p{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top:80px;
+}
+
+.sobre{
+    background-image: url("https://media.istockphoto.com/photos/crumpled-white-paper-texture-picture-id921802672?k=6&m=921802672&s=612x612&w=0&h=xqaHkZo9T75raHsSgjTlmfvMDMeec_4E1u2jL12j2VI=");
+    height:20%;
+}
+
+.sobre div{
+    width:1200px;
+    text-align: center;
+    vertical-align: middle;
+    margin:0 auto 0 100px;
+}
+
+.sobre h2{
+    font-size:45px;
+    padding:30px 60px;;
+
+}
+
+.sobre img{
+    display:inline-block;
+    width:25%;
+    border-radius: 50%;
+}
+
+.sobre p{
+    display:inline-block;
+    width:70%;
+    font-size: 30px;
+    vertical-align:top;
+    margin-top: 50px;
+
+}
+
+.projetos{
+    background-image: url("https://media.istockphoto.com/photos/crumpled-white-paper-texture-picture-id921802672?k=6&m=921802672&s=612x612&w=0&h=xqaHkZo9T75raHsSgjTlmfvMDMeec_4E1u2jL12j2VI=");
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+.projetos div{
+    width: 940px;
+    box-sizing: border-box;
+    margin:20px auto 10px auto;
+    padding: 30px 0;
+}
+
+.projetos h2{
+    font-size:45px;
+    font-weight: bold;
+}
+
+
+.projetos img{
+    width:45%;
+    vertical-align: middle;
+}
+
+.projetos button{
+    font-size:30px;
+    margin: 15px 0;
+}
+
+.contato{
+    background-image: url("https://media.istockphoto.com/photos/kraft-paper-texture-for-wraping-picture-id828612322?k=6&m=828612322&s=612x612&w=0&h=dmYgcrCGIJovkib2p3vzFxLAphonhcf3IhjoIe2FpeU=");
+    text-align: center;
+    padding:100px 0;
+}
+
+.contato h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;;
+}
+
+.contato label{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contato input{
+    font-size: 35px;
+    margin:2px 0;
+}
+
+.contato textarea{
+    vertical-align: middle;
+    font-size: 35px;
+    margin:2px 0;
+}

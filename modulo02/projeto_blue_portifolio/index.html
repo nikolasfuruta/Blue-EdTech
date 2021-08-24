@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='reset.css'>
+    <link rel='stylesheet' href='style.css'>
+    <title>Portifolio</title>
+</head>
+
+<body>
+    <header class='intro'>
+        <nav>
+            <ul>
+                <li><a href='#sobre'>Sobre</a></li>
+                <li><a href='#projeto'>Projetos</a></li>
+                <li><a href='#contato'>Contato</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1>olá!</h1>
+            <p>Bem vindo ao meu portifólio</p>
+        </div>
+    </header>
+
+    <main>
+        <section class='sobre'>
+            <h2 id='sobre'>Sobre</h2>
+            <div>
+                <img src='img/nikolas_foto.jpg'>
+                <p>Meu nome é Nikolas! Sou estudante de programação pela Blue EdTech seguindo o<br>
+                caminho para trabalhar na área de desenvolvimento!<br>
+                Gosto da área de exatas, tenho uma preferência por backend e adoro filmes de terror.<br>
+                De vez em quando faço projetos de design para amigos.</p>
+            </div>
+        </section>
+
+        <section class='projetos'>
+            <h2 id='projeto'>Projetos</h2>
+            <div>
+                <img id='img-logo' src='img/nonsense.png';>
+            </div>
+            <button id='botao-logo' value='1'>Next</button>
+        </section>
+
+        <section id='contato' class='contato'>
+            <form>
+                <h2>Contato</h2>
+                <div class='nome'>
+                    <label for='nome'>Nome:</label>
+                    <input type='text' name='nome' id='nome' placeholder='Digite o seu nome' >
+                </div>
+            
+
+                <div class='email'>
+                    <label for='email'>E-mail:</label>
+                    <input type='email' name='email' id='email' placeholder='Digite o seu email' >
+                </div>
+
+                <div class='texto'>
+                    <label for='texto'>Mensagem: </label>
+                    <textarea type='textarea' name='texto' id='texto' placeholder='Digite o seu texto' cols='20'></textarea>
+                </div>
+            </form>
+        </section>
+    </main>
+<script type='text/javascript' src='script.js'></script>
+</body>
+</html>

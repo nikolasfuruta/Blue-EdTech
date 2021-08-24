@@ -1,0 +1,15 @@
+{
+  "name": "exercicio_detetive",
+  "version": "1.0.0",
+  "description": "Exercicio_aula_01",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "Nikolas",
+  "license": "ISC",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}

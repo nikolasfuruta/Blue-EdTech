@@ -1,0 +1,37 @@
+Bem vindo ao jogo Lima's Simulator!
+
+Neste jogo você tem a experiência de simular o dia a dia do professor Thiago Lima em cinco grandes áreas de sua vida.
+
+SOBRE AS GRANDES ÁREAS:
+	Lazer:		   opções referentes ao descanso e passatempos
+	Trabalho:	   opções referentes à parte profissional de ser programador/professor
+	Estudo:		   opções referentes à aquisição de skills
+	Cuidar da casa:	   opções referentes à vida doméstica
+	Projetos pessoais: opções referentes aos objetivos e projetos paralelos
+
+SOBRE OS ATRIBUTOS:
+Dentro de cada uma das cinco grandes áreas você pode escolher dentre cinco possibilidades onde cada uma delas executa uma ação respectiva àquela opção, alterando assim os atributos de seu personagem, sendo:
+
+	Saúde: 		medida de seu bem-estar físico
+	Relacionamento: medida da qualidade de seu relacionamento com sua esposa
+	Dinheiro: 	medida da sua situação financeira
+	Estresse: 	medida de seu bem-estar mental
+	Experiência: 	medida das skills que você adquiriu
+	Nível: 		medida do seu nível de conhecimento: Estudante, Junior, Pleno e Sênior
+
+Como as cinco grandes áreas são interrelacionadas, os valores de seus atributos definem as ações que você pode executar ou não. Por exemplo, ao escolher uma opção que envolva melhorar seu relacionamento com sua esposa mas que também envolva gastar dinheiro, se seu atributo 'dinheiro' for insuficiente você não conseguirá executar esta ação; assim tais atributos, de acordo com suas escolhas, podem aumentar ou diminuir. Os valores iniciais de seus atributos são:
+	
+	Saúde: 		100 / 100
+	Relacionamento: 100 / 100
+	Dinheiro: 	R$ 150,00
+	Estresse: 	0 / 100
+	Experiência: 	0
+	Nível:		Estudante
+
+Ao final da execução de cada ação o jogo atualizará seus atributos e mostrará para você através de uma tela de status. Os valores de seus atributos guiarão as escolhas que você deve fazer no decorrer do jogo, então preste atenção neles!
+
+SOBRE AS ESCOLHAS:
+Ao escolher e executar uma escolha o jogo lhe mostrará uma mensagem dizendo como foi a execução de tal ação. Entretanto, dentro de cada opção, podem surgir resultados inesperados que mexerão com seus atributos não da maneira que você desejou. Contar com a sorte nesses momentos vai ajudar ou atrapalhar seu jogo, então tome cuidado.
+
+SOBRE GAME OVER:
+Em qualquer momento que seu atributo 'saúde' chegar a zero, o jogo acaba. Entretanto, administrando os atributos e as escolhas que fizer, você pode jogar indefinidamente, iniciando e concluindo os dias.
