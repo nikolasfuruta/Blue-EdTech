@@ -1,7 +1,7 @@
 const express = require('express');
-const Filmes = require("./filmesController");
-const Jogos = require('./jogosController');
-const Series = require('./seriesController');
+const Filmes = require("./controller/filmesController");
+const Jogos = require('./controller/jogosController');
+const Series = require('./controller/seriesController');
 
 //instância express
 const app = express();

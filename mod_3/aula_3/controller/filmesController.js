@@ -1,4 +1,4 @@
-let listaFilmes = []
+let listaFilmes = require("../models/filmesLista");
 
 module.exports = (app) =>{
     app.get("/listarfilmes", (req,res)=>{

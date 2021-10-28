@@ -1,4 +1,4 @@
-let listaJogos = []
+let listaJogos = require("../models/jogosLista");
 
 module.exports = (app) => {
     app.get("/listarjogos", (req,res)=>{

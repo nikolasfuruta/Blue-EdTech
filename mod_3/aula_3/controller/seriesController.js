@@ -1,4 +1,4 @@
-let listaSeries = []
+let listaSeries = require("../models/seriesLista");
 
 module.exports = (app) => {
     app.get("/listarseries", (req,res)=>{
