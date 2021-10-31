@@ -1,0 +1,25 @@
+A proposta do desafio é o desenvolvimento de uma API para cadastro de 3 temas a sua escolha.
+
+
+As rotas devem estar separadas como visto na aula de sexta (29/10).
+
+Criar o arquivo index.js e a partir dele chamar as demais rotas.
+
+
+Cada rota precisa ter pelo menos 4 campos a serem cadastrados.
+
+Criar os seguintes Endpoints por rota:
+[GET] Leitura de todas os itens
+[GET] Leitura de itens individuais (por index)
+[POST] Cadastro
+[PUT] Edição de item por ID
+[DELETE] Exclusão de item por ID
+Requisitos 
+Cadastro de um novo item, validando as entradas.
+Edição de um item pré-cadastrado.
+Excluir um item.
+Exibir a lista de item cadastrados.
+Exibir um item por id estar dividido em rotas
+
+Entrega
+Link do GITHUB do projeto contendo back-end e coleção do thunder.

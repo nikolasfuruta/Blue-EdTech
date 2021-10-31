@@ -1,20 +1,20 @@
 {
-  "name": "aula_3",
+  "name": "projeto_1",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node server.js",
-    "dev":"nodemon server.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
   "devDependencies": {
     "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "consign": "^0.1.6",
+    "express": "^4.17.1"
   }
 }

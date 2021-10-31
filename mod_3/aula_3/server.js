@@ -1,7 +1,7 @@
 const express = require('express');
-const Filmes = require("./controller/filmesController");
-const Jogos = require('./controller/jogosController');
-const Series = require('./controller/seriesController');
+const filmesRoute = require("./controller/filmesController");
+const jogosRoute = require('./controller/jogosController');
+const seriesRoute = require('./controller/seriesController');
 
 //instância express
 const app = express();
@@ -11,15 +11,9 @@ const port = 3000;
 
 //definir middlewares
 app.use(express.json())
-
-//FILMES
-Filmes(app)
-
-//JOGOS
-Jogos(app)
-
-//SERIES
-Series(app)
+app.use("/filmes", filmesRoute)
+app.use("/jogos", jogosRoute)
+app.use("/series", seriesRoute)
 
 //subir (uppar) o servidor
 app.listen(port, ()=>{
