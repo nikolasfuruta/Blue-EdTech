@@ -16,6 +16,9 @@ e quatro notas de 1.*/
 
 const promp = require('prompt-sync')();
 
-const caixaEletronico = () => {}
+const caixaEletronico = () => {
+    
+
+}
 
 caixaEletronico();
