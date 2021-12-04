@@ -15,4 +15,13 @@ model Filmes {
   titulo  String  @unique
   capa    String?
   sinopse String?
+  genero  Generos @relation(fields: [genero_id], references: id)
+  genero_id Int   @unique
+}
+
+model Generos {
+  id    Int @default(autoincrement()) @id
+  nome  String  @unique
+  filmes  Filmes[]
+
 }
