@@ -5,6 +5,7 @@ import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { Prisma, User } from '@prisma/client';
 import * as bcrypt from 'bcrypt';
+import { JwtPayLoad } from 'src/auth/jwt.strategy';
 
 @Injectable()
 export class UserService {
@@ -17,20 +18,20 @@ export class UserService {
     });
   }
 
-  async findAll() {
+  async findAll(): Promise<User[]> {
     return await this.prisma.user.findMany();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} user`;
+  async findOne(id: number): Promise<User> {
+    return await this.prisma.user.findUnique({ where: { id } });
   }
 
-  update(id: number, updateUserDto: UpdateUserDto) {
-    return `This action updates a #${id} user`;
+  async update(id: number, info: UpdateUserDto): Promise<User> {
+    return await this.prisma.user.update({ where: { id }, data: info });
   }
 
-  remove(id: number) {
-    return `This action removes a #${id} user`;
+  async remove(id: number): Promise<User> {
+    return await this.prisma.user.delete({ where: { id } });;
   }
 
   /*Essa função eu criei para ser usada no auth junto com JWT*/
@@ -46,10 +47,20 @@ export class UserService {
     if(!user){
       throw new HttpException("USUARIO NÃO ENCONTRADO",HttpStatus.NOT_FOUND);
     }
-    const senhaIgual = await bcrypt.compare(login.senha,user.senha);
+    const senhaIgual = await bcrypt.compare(login.senha, user.senha);
     if(!senhaIgual){
       throw new HttpException("SENHA INVÁLIDA",HttpStatus.UNAUTHORIZED);
     }
     return user;
+  }
+
+  async validateUser(payLoad: JwtPayLoad): Promise<User> {
+    const user = await this.prisma.user.findFirst({ where: { email: payLoad.email } })
+
+    if(!user) {
+      throw new HttpException("Token inválido",HttpStatus.UNAUTHORIZED);
+    }
+
+    return user
   }
 }
