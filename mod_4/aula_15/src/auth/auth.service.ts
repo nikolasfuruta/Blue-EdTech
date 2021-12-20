@@ -26,7 +26,7 @@ export class AuthService {
         }
 
         const token = this._createToken(user); //caso o usuario seja válido, gera o token
-        return { email: user.email, ...token };
+        return { email: user.email, ...token }; //retorna o obj user acrescido do token
     }
 
     private _createToken({ email }: LoginDto) {

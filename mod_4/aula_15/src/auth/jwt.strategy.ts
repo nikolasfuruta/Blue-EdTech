@@ -4,6 +4,7 @@ import { PassportStrategy } from '@nestjs/passport';
 import { ExtractJwt, Strategy } from 'passport-jwt';
 
 //classe responsável pela autenticação do Token
+//O proprio jwt se encarrega de chamar e usar ele
 
 export interface JwtPayload {
     email: string;
@@ -19,7 +20,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
         })
     }
 
-    validate(payload: JwtPayload) {
+    validate(payload: JwtPayload) { //sem esse método, o checkLogin não funciona 
         return payload;
     }
 }
